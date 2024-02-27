@@ -19,7 +19,6 @@ obs[flip] <- -obs[flip]
 decadj_indices <- which(obs >= 1 & obs < 1.1)
 obs[decadj_indices] <- obs[decadj_indices] / 10
 cleaned_mean <- mean(obs)
-cleaned_mean
 ```
 
 We simulated a normally distributed data set with a standard deviation of 1 and a mean of 1. The simulation unfolded in several stages, each introducing a distinct form of contamination or alteration, reflecting real-world challenges researchers might face in the data collection and preparation phases. The data was simulated wholly with @R and the package @tidyverse (Wickham et. al., 2019).
@@ -78,6 +77,8 @@ The cumulative effect of these issues—ranging from the instrument's memory lim
 Addressing such challenges requires a thorough approach to ensure data integrity. Systematic checks throughout the duration of an experiment can help identify unusual patterns or duplicate observations. Analyzing the range and distribution of data regularly can uncover unexpected shifts indicative of accidental manipulation. Implementing protocols for data cleaning, utilizing anomaly detection methods, and training awareness among data handlers are critical steps toward mitigating the impact of such errors. Through the potential application of these strategies, researchers can safeguard against data integrity issues, thereby enhancing the robustness of their analyses and the validity of their conclusions. While errors in data handling are inevitable, their adverse effects can be significantly reduced through careful planning, transparent processing, and proper worker training.
 
 Feedback for this evaluation was provided by Tracy Yang and this paper was updated accordingly.
+
+github repository: <https://github.com/alexandersunliang/Effects-of-Data-Errors.git>
 
 \newpage
 
